@@ -16,10 +16,8 @@ dotEnv.config();
 // connectDb();
 const app = express();
 
-app.use(cors());
-
 var corsOptions = {
-  origin: "http://localhost:3000"
+  origin: "*"
 };
 
 app.use(cors(corsOptions));
