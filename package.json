@@ -2,18 +2,17 @@
   "name": "Codebrewers",
   "version": "1.0.0",
   "description": "Code brewers",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
   "engines" : {
     "node": "18.x"
   },
   "scripts": {
-    "server": "nodemon Server",
+    "dev": "nodemon index.js",
     "client": "npm start --prefix frontend",
     "restart": "npm install && pm2 restart pm2.json",
-    "start": "node server",
+    "start": "node index.js",
     "stop": "pm2 stop pm2.json",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node seeder",
     "data:destroy": "node seeder -d"
   },
