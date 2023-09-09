@@ -10,15 +10,12 @@ import cors from "cors";
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 import { port } from "./constants/envConstants.js";
 
+
 dotEnv.config();
 
 // connectDb();
 const app = express();
-
-app.use(cors({
-  origin: '*'
-}));
-
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
