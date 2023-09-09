@@ -26,9 +26,9 @@ app.get("/", (req, res) => {
 // app.use("/api/upload", uploadRoutes);
 app.use("/api/chatbot", chatbot)
 
-app.get("/api/config/payPal", (req, res) => {
-  res.send(process.env.PAYPAL_CLIENT_ID);
-});
+// app.get("/api/config/payPal", (req, res) => {
+//   res.send(process.env.PAYPAL_CLIENT_ID);
+// });
 
 // const __dirname = path.resolve();
 // app.use("/uploads", express.static(path.join(__dirname, "/uploads")));

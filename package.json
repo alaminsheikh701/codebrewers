@@ -1,8 +1,8 @@
 {
-  "name": "SeriosAnahata",
+  "name": "Codebrewers",
   "version": "1.0.0",
-  "description": "Serios Anahata Backend",
-  "main": "Server.js",
+  "description": "Code brewers",
+  "main": "server.js",
   "type": "module",
   "engines" : {
     "node": "18.x"
