@@ -6,7 +6,7 @@ import dotEnv from "dotenv";
 import chatbot from "./router/chatbotRoutes.js";
 
 // import connectDb from "./config/db.js";
-import cors from "cors";
+// import cors from "cors";
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 import { port } from "./constants/envConstants.js";
 
@@ -15,7 +15,7 @@ dotEnv.config();
 
 // connectDb();
 const app = express();
-app.use(cors());
+// app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
